@@ -1,15 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-//componentes MVC dentro de la web
 using System.Web;
 using System.Web.Mvc;
-//componentes BDD y conexion
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
-// otras librerias
-using AplicacionWebNomina.Models;
 
 namespace AplicacionWebNomina.Controllers
 {
@@ -33,7 +26,6 @@ namespace AplicacionWebNomina.Controllers
 
             return View();
         }
-
         public ActionResult Error()
         {
             ViewBag.Message = "Error in this application";
